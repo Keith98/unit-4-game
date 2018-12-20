@@ -12,7 +12,7 @@ function delayRestart() {
 
 
     
-      disableClick = false;
+      disableClick = true;
       intervalId = setInterval(countDown, 1000);
 }
 
@@ -67,7 +67,7 @@ function countDown() {
             // And put the initial values up on the display
             $("#num2Guess").text(this.targetScore);
             $("#userScore").text("0");
-            disableClick = false;
+            disableClick = true;
         },
 
         startGame: function() {
